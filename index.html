@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segments</title>
+</head>
+
+<body>
+
+    <center>
+        <div>
+            <div>
+                <input type="range" min="4" max="235" id="rangeInput" onchange="createDraw()">
+            </div>
+
+            <input list="colors" name="browser" id="colorsInput">
+            <datalist id="colors">
+                <option value="random">
+                <option value="red">
+                <option value="blue">
+                <option value="cadetblue">
+                <option value="darkcyan">
+                <option value="green">
+                <option value="lawngreen">
+                <option value="white">
+                <option value="yellow">
+                <option value="orange">
+            </datalist>
+
+
+        </div>
+
+        <canvas id="canvas" width="700" height="700"></canvas>
+
+        <div>
+            <h6>Nicolás Estaban Prieto Sarmiento</h6>
+        </div>
+    </center>
+
+    <script src="./index.js"></script>
+
+    <style>
+        body {
+            color: white;
+            background-color: #141b1b;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #555454;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+
+        input {
+            background: transparent;
+            border: solid 1px white;
+            height: 2em;
+            color: white;
+            border-radius: 4px;
+        }
+    </style>
+</body>
+
+</html>
