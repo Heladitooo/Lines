@@ -32,7 +32,7 @@ function createDraw() {
 
     //Limpia el lienzo
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
+
     //Iteracion inicial
     let iterations = 1;
 
@@ -41,9 +41,9 @@ function createDraw() {
 
         //Cambiamos el color del fondo a negro
         document.body.style.background = "black";
-        
+
         //Si el color es random
-        if(colorsInput.value === "random"){
+        if (colorsInput.value === "random") {
             //Cada vez que dibuje una linea elegira un color aleatorio
             ctx.strokeStyle = colors[RandomRange(0, colors.length)];
         } else {
@@ -64,7 +64,7 @@ function createDraw() {
         ctx.stroke();
 
         //Si la iteracion en y es mayor a la altura del lienzo
-        if(iterations * rangeInput.value > canvas.height){
+        if (iterations * rangeInput.value > canvas.height) {
             //Termina el intervalo de 500 milisegundos
             clearInterval(draw);
 
